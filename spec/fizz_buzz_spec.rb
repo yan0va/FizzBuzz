@@ -18,11 +18,11 @@ describe 'FizzBuzz' do
       expect(fizz_buzz(45)).to eq 'FizzBuzz'
     end
 
-    it "not divisible by 3 and 5" do
+    it "not divisible by numbers 3 and 5" do
       expect(fizz_buzz(2)).to eq 2
     end
 
-    it "not divisible by 3 and 5" do
+    it "not divisible by numbers 3 and 5" do
       expect(fizz_buzz(16)).to eq 16
     end
 
