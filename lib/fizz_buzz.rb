@@ -15,3 +15,7 @@ def fizz_buzz(number)
       number
     end
 end
+
+
+# There are no 'Pink Flamingos' Chris, sorry :/
+# There are no numbers in the Fibonacci sequence that are multiples of three and five under 100.
