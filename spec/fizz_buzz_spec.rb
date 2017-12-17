@@ -19,11 +19,24 @@ describe 'FizzBuzz' do
     end
 
     it "not divisible by numbers 3 and 5" do
-      expect(fizz_buzz(2)).to eq 2
+      expect(fizz_buzz(7)).to eq 7
     end
 
     it "not divisible by numbers 3 and 5" do
       expect(fizz_buzz(16)).to eq 16
+    end
+
+# Test for Fibonacci sequence
+    it "prints 'Flamingo' for the number 1" do
+      expect(fizz_buzz(1)).to eq 'Flamingo'
+    end
+
+    it "prints 'Flamingo' for the number 13" do
+      expect(fizz_buzz(13)).to eq 'Flamingo'
+    end
+
+    it "prints 'Flamingo' for the number 89" do
+      expect(fizz_buzz(89)).to eq 'Flamingo'
     end
 
 end
