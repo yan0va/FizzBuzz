@@ -1,0 +1,39 @@
+<html>
+  <head>
+    <title>FizzBuzz</title>
+    <link rel="stylesheet" type="text/css" href="/app.css">
+  </head>
+  <body>
+    <header>
+    <h1>FIZZ BUZZ GAME</h1>
+    </header>
+    <div class="content">
+      <p>We are going to play a game of FizzBuzz.</p>
+      <p>The rules are simple. We want to count from 1 to 100.</p>
+      <p>But if the number is divisible by 3, we are going to print "Fizz".</p>
+      <p>And if the number is divisible by 5, we are going to print "Buzz".</p>
+      <p>What if the number is divisible by 3 and 5? That's right! "FizzBuzz!"</p>
+      <p>Guess, what will we print if the number is a member of the Fibonacci sequence?</p>
+    </div>
+<div class="form">
+    <h2>Enter your number to play</h2>
+    <form action='/'>
+      <input type='text' name='number' value='<%= @number %>'>
+      <input id='button' type='submit' value="Let's FizzBuzz"/>
+    </form>
+    <% if @limit_exceeded %>
+      <span style="color: #cb291c; font-size: 20px;">You can play only up to 100! Please enter number below 100 :)</span>
+    <% elsif @flamingo %>
+      <span style="display: block;"><img class="flamingo" src="images/christmas_flamingo.jpg"></img></span>
+    <% else %>
+      <span style="font-size:30px;">
+      <%= @result %>
+    </span>
+    <% end %>
+  </div>
+    <div class="footer">
+      <div class="github_icon"><a href="https://github.com/yan0va/fizzBuzz"target="_blank"><img src="images/github.png" alt="Github"></a>
+    </div>
+  </div>
+  </body>
+</html>
